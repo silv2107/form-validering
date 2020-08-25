@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validator</title>
+</head>
+<body>
+    <form novalidate>
+        <div class="inputInfo">
+            <div class="inputField">
+                <label for="firstName">Fornavn:*</label>
+                <input type="text" name="fornavn" class="firstName" id="firstName" placeholder="ex. Jens" required>
+                <span class="statusMessage firstName"></span>
+                <p class="hint">Skriv dit fornavn her</p>
+            </div>
+
+            <div class="inputField">
+                <label for="lastName">Efternavn:*</label>
+                <input type="text" id="lastName" class="lastName" name="efternavn" placeholder="ex. Jensen" required>
+                <span class="statusMessage lastName"></span>
+                <p class="hint">Skriv dit efternavn her</p>
+            </div>
+
+            <div class="inputField">
+                <label for="username">Brugernavn*</label>
+                <input type="text" name="brugernavn" id="username" class="username" placeholder="ex. Brainman"required>
+                <span class="statusMessage username"></span>
+                <p class="hint">Skriv brugernavn her</p>
+            </div>
+
+            <div class="inputField">
+                <label for="email">E-mail*</label>
+                <input type="email" name="email" id="email" class="email" placeholder="ex. body@hansen.com"required>
+                <span class="statusMessage email"></span>
+                <p class="hint">Skriv din mail her</p>
+            </div>
+
+            <div class="inputField">
+                <label for="password">Kodeord*</label>
+                <input type="password" name="kodeord" id="password" class="password" placeholder="ex. 12RcPLae"required>
+                <span class="statusMessage password"></span>
+                <p class="hint">Skriv dit kodeord her</p>
+            </div>
+        </div>
+
+
+        <fieldset class="address">
+            <legend>Adresse</legend>
+            <div class="addressPart1">
+                <div class="inputField">
+                    <label for="street">Gade:*</label>
+                    <input type="text" id="gade" name="gade" class="gade" placeholder="ex. Hansens vej"required>
+                    <span class="statusMessage gade"></span>
+                    <p class="hint">Skriv dit gadenavn her</p>
+                </div>
+
+                <div class="inputField">
+                    <label for="houseNumber">Husnummer:*</label>
+                    <input type="text" id="houseNumber" name="husnummer" class="houseNumber" placeholder="ex. 4A"required>
+                    <span class="statusMessage houseNumber"></span>
+                    <p class="hint">Skriv dit husnummer her</p>
+                </div>
+
+                <div class="inputField">
+                    <label for="floor">Etage:</label>
+                    <input type="text" id="floor" name="etage" class="floor" placeholder="ex. anden th">
+                    <span class="statusMessage floor"></span>
+                    <p class="hint">Skriv dit etage nummer her</p>
+                </div>
+            </div>
+
+            <div class="addressPart2">
+                <div class="inputField">
+                    <label for="zipCode">Postnummer:*</label>
+                    <input type="text" name="postnummer" id="zipCode" class="zipCode" placeholder="ex. 4000"required>
+                    <span class="statusMessage zipCode"></span>
+                    <p class="hint">Skriv dit postnummer her</p>
+                </div>
+
+                <div class="inputField">
+                    <label for="city">By:*</label>
+                    <input type="text" name="by" id="city" class="city" placeholder="ex. Roskilde"required>
+                    <span class="statusMessage city"></span>
+                    <p class="hint">Skriv din by her</p>
+                </div>
+
+                <div class="inputField">
+                    <label for="country">Land:*</label>
+                    <input type="text" name="land" id="country" class="country" placeholder="ex. Danmark"required>
+                    <span class="statusMessage country"></span>
+                    <p class="hint">Skriv dit land her</p>
+                </div>
+            </div>
+        </fieldset>
+
+        <button type="submit">Opret konto</button>
+    </form>
+    <script src="script.js" defer></script>
+</body>
+</html>

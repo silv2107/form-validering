@@ -1,0 +1,96 @@
+form{
+    width: 45%;
+    /* height: 100vh; */
+    margin: 5vh auto;
+    /* display: flex; */
+    font-size: 1.4em;
+    background: rgba(64, 224, 208, 0.479);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.inputField{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+/* .inputInfo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10vh;
+} */
+
+.address{
+    /* display: flex;
+    justify-content: center; */
+    width: 80%;
+    margin: 0 auto;
+    border: 1px rgba(0, 0, 0, 0.507) dotted;
+}
+
+.hint{
+    margin-top: 0px;
+    font-size: .5em;
+}
+
+input{
+    /* color: black; */
+    outline: .5px solid orange;
+    outline-offset: .5px;
+}
+
+input::-moz-placeholder{
+    opacity: 1;
+}
+
+.statusMessage{
+    color: red;
+    font-size: .8em;
+
+}
+
+.addressPart1{
+    /* margin-right: 20%; */
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.addressPart1 .inputField:nth-child(1){
+    margin-right: 10px;
+}
+
+.addressPart1 .inputField:nth-child(2){
+    margin-right: 10px;
+}
+
+.addressPart2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.addressPart2 .inputField:nth-child(1){
+    margin-right: 10px;
+}
+
+.addressPart2 .inputField:nth-child(2){
+    margin-right: 10px;
+}
+
+legend{
+    font-size: 1.7em;
+}
+
+button{
+    font-size: 2em;
+    width: 15vw;
+    background: rgba(245, 222, 179, 0.466);
+    margin-left: 35%;
+}
+
+
+
